@@ -1,0 +1,92 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/ctrl-freaks/freezeframe.js/master/build/css/freezeframe_styles.min.css">
+  <script type="text/javascript" src="https://cdn.rawgit.com/ctrl-freaks/freezeframe.js/master/build/js/freezeframe.pkgd.js"></script>
+  <style type="text/css">
+  body {
+    text-align: center;
+    max-width: 795px;
+    margin: 0px auto;
+    padding: 20px;
+    color: #202020;
+  }
+
+  div.whitespace1 {
+    height:50px;
+    width:795px;
+  }
+
+  div.whitespace2 {
+    height:100px;
+    width:795px;
+  }
+
+  div.whitespace3 {
+    height:200px;
+    width:795px;
+  }
+
+  div.whitespace4 {
+    height:300px;
+    width:795px;
+  }
+
+  div.whitespace5 {
+    height:400px;
+    width:795px;
+  }
+
+  </style>
+
+  <script type="text/javascript">
+    $(function() {
+      first = new freezeframe({
+        'selector': '.my_class_1',
+        'non_touch_device_trigger_event': 'hover'
+      }).freeze();
+
+      second = new freezeframe({
+        'selector': '.my_class_2',
+        'animation_play_duration': Infinity,
+        'non_touch_device_trigger_event': 'click'
+      }).freeze();
+
+      third = new freezeframe('.my_class_3').capture().setup();
+
+      $('.start').click(function(e) {
+        e.preventDefault();
+        third.trigger();
+      });
+
+      $('.stop').click(function(e) {
+        e.preventDefault();
+        third.release();
+      });
+
+      $('.my_class_4').freezeframe();
+
+    })
+  </script>
+
+
+
+
+</head>
+<body>
+<img class="my_class_1" src="C:\Users\alana\Dropbox\+ 2017 Fall\Studio\Slider\Summary\ME\Exports/images/START.gif" width="795" height="400" alt="" />
+<div class="whitespace4"></div>
+<img src="C:\Users\alana\Dropbox\+ 2017 Fall\Studio\Slider\Summary\ME\HeadersTitles_TotalPopulationTitle.png" />
+<img class="my_class_1" src="C:\Users\alana\Dropbox\+ 2017 Fall\Studio\Slider\Summary\ME\Exports/images/Population-Change-ver1.gif"  width="795" height="500" alt="" />
+<div class="whitespace1"></div>
+<img class="my_class_1" src="C:\Users\alana\Dropbox\+ 2017 Fall\Studio\Slider\Summary\ME\Exports/images/TransformtoDots.gif" width="795" height="800" alt="" />
+<div class="whitespace1"></div>
+<img class="my_class_1" src="C:\Users\alana\Dropbox\+ 2017 Fall\Studio\Slider\Summary\ME\Exports/images/RenterBurden.gif" width="795" height="220" alt="" />
+<div class="whitespace3"></div>
+<img class="my_class_1" src="C:\Users\alana\Dropbox\+ 2017 Fall\Studio\Slider\Summary\ME\Exports/images/OwnerBurden.gif" width="795" height="220" alt="" />
+<div class="whitespace1"></div>
+<img class="my_class_1" src="C:\Users\alana\Dropbox\+ 2017 Fall\Studio\Slider\Summary\ME\Exports/images/HomelessPIT.gif" width="795" height="400" alt="" />
+
+
+
+
+</html>
